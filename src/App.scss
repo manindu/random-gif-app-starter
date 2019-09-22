@@ -1,0 +1,41 @@
+$button-color: #673AB7;
+
+.root-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  width: 100vw;
+
+  .button {
+    width: 60%;
+    height: 54px;
+    font-size: 20px;
+    background-color: $button-color;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+
+    &:hover {
+      border: 2px solid $button-color;
+      background-color: white;
+      color: $button-color;
+    }
+
+    &:active {
+      border: 2px solid $button-color;
+      background-color: lightgray;
+      color: $button-color;
+    }
+
+  }
+
+  .inner-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
